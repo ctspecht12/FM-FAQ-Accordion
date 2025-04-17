@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/ctspecht12/FM-FAQ-Accordion)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://ctspecht12.github.io/FM-FAQ-Accordion/)
 
 ## My process
 
