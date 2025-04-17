@@ -1,0 +1,151 @@
+/* # Front-end Style Guide
+
+## Layout
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+- White: hsl(0, 100%, 100%)
+- Purple 100: hsl(275, 100%, 97%)
+- Purple 600: hsl(292, 16%, 49%)
+- Purple 950: hsl(292, 42%, 14%)
+- Bright Purple: hsl(282deg, 86%, 55%)
+
+## Typography
+
+### Body Copy
+- Font size (paragraphs): 16px
+
+### Font
+- Family: [Work Sans](https://fonts.google.com/specimen/Work+Sans)
+- Weights: 400, 600, 700 
+
+****************/
+
+/* FONT WEIGHT CLASSES */
+
+.work-sans-regular {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.work-sans-medium {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.work-sans-bold {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ******** */
+
+body {
+  background-color: hsl(275, 100%, 97%);
+  font-family: Work Sans, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-image: url("assets/images/background-pattern-desktop.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 55px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+  color: hsl(292, 16%, 49%);
+}
+
+#card {
+  width: 450px;
+  height: 400px;
+  border-radius: 30px;
+  padding: 30px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.heading-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.star-icon {
+  margin-right: 10px;
+}
+
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.question-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.question {
+  transition-duration: 0.2s;
+}
+
+.question:hover {
+  cursor: pointer;
+  color: hsl(282deg, 86%, 55%);
+}
+
+.trigger {
+  cursor: pointer;
+}
+
+.question-container + .answer-container {
+  display: none;
+}
+
+.question-container.is-open + .answer-container {
+  display: block;
+}
+@media (max-width: 475px) {
+  #card {
+    max-width: 75vw;
+    height: 560px;
+  }
+}
+
+.trigger {
+  margin-left: 1rem;
+}
